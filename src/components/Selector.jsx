@@ -45,6 +45,7 @@ const Selector = () => {
             <ul className={`bg-white mt-2  overflow-y-auto ${
                 open ? " max-h-60 " : " max-h-0"
             }`}>
+
                 <div className="flex items-center px-2 sticky top-0 bg-white">
                     <AiOutlineSearch size={18} className="text-gray-700"/>
                     <input 
@@ -54,11 +55,11 @@ const Selector = () => {
                     placeholder="Enter country name"
                     className="placeholder:text-gray-700 p-2 outline-none"
                     />
+
                 </div>
 
 
-                {
-                    countries?.map((country) => (
+                { countries?.map((country) => (
                         <li 
                         key={country?.name}
                         className={`p-2 text-sm hover:bg-sky-500 hover:text-white
